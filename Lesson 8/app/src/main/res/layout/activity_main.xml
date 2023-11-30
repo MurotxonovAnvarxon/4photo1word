@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="14dp"
+        android:layout_marginTop="30dp"
+        android:elevation="8dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textQuestionPos"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_level"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:padding="14dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@id/image3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/image2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:padding="14dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@id/image4"
+            app:layout_constraintLeft_toRightOf="@id/image1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:padding="14dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/image4"
+            app:layout_constraintTop_toBottomOf="@id/image1" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:padding="14dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/image3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <FrameLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="72dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_horizontal"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:layout_marginVertical="4dp"-->
+    <!--                android:layout_weight="1">-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/image1"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginEnd="8dp"-->
+    <!--                    tools:src="@drawable/pic1_1" />-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/image2"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    tools:src="@drawable/pic1_2" />-->
+
+
+    <!--            </LinearLayout>-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:layout_marginVertical="4dp"-->
+    <!--                android:layout_weight="1">-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/image3"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginEnd="8dp"-->
+    <!--                    tools:src="@drawable/pic1_3" />-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/image4"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    tools:src="@drawable/pic1_4" />-->
+    <!--            </LinearLayout>-->
+    <!--        </LinearLayout>-->
+
+    <!--        <androidx.appcompat.widget.AppCompatTextView-->
+    <!--            android:id="@+id/textQuestionPos"-->
+    <!--            android:layout_width="130dp"-->
+    <!--            android:layout_height="110dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:background="@drawable/ic_level"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="1"-->
+    <!--            android:textColor="#FFFFFF"-->
+    <!--            android:textSize="32sp"-->
+    <!--            android:textStyle="bold" />-->
+    <!--    </FrameLayout>-->
+
+    <!--    <Space-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="100dp" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPlay"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginHorizontal="56dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_action"
+        android:text="Play"
+        android:textAllCaps="false"
+        android:textColor="#1B2545"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+        tools:ignore="MissingConstraints" />
+
+
+    <!--    <Space-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="16dp" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAbout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginHorizontal="56dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_action"
+        android:text="Info"
+        android:textAllCaps="false"
+        android:textColor="#1B2545"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonPlay"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginHorizontal="56dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_action"
+        android:text="Exit"
+        android:textAllCaps="false"
+        android:textColor="#1B2545"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonAbout"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
